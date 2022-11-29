@@ -41,7 +41,7 @@ def get_close_prices(symbol):
 
 
 def get_nse_500_symbols():
-    with open('data.csv', 'r') as data:
+    with open('nifty500.csv', 'r') as data:
         return [row['Symbol'] for row in csv.DictReader(data)]
 
 
